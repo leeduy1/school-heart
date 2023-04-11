@@ -1,0 +1,98 @@
+@use "../abstracts/" as *;
+.header {
+  padding-top: 19px;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .header__logo {
+      color: $light-text-color;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: 0.1px;
+
+      @include tablet {
+        font-size: 18px;
+        line-height: 22px;
+      }
+    }
+
+    .header-list {
+      display: flex;
+      flex: 1;
+      gap: 21px;
+      margin-left: 87px;
+
+      @include tablet {
+        margin-left: 0;
+        flex: none;
+        gap: 18px;
+      }
+
+      @include mobile {
+        display: none;
+      }
+
+      .header-list-item {
+        .item__link {
+          letter-spacing: 0.2px;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 24px;
+          color: $light-text-color;
+
+          @include tablet {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+
+    .header-btn {
+      @include mobile {
+        display: none;
+      }
+      .btn-login,
+      .btn-join-us {
+        width: 137px;
+        height: 52px;
+        cursor: pointer;
+        color: $light-text-color;
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: 0.2px;
+
+        @include tablet {
+          width: 100px;
+          height: 40px;
+          font-size: 12px;
+        }
+      }
+      .btn-login {
+        background-color: transparent;
+        outline: none;
+        border: none;
+      }
+      .btn-join-us {
+        background-color: $primary-color;
+        border: none;
+        border-radius: 5px;
+        text-transform: uppercase;
+
+        .btn-join-us__text {
+          margin-right: 12px;
+        }
+      }
+    }
+
+    .header__menu {
+      display: none;
+
+      @include mobile {
+        display: block;
+      }
+    }
+  }
+}

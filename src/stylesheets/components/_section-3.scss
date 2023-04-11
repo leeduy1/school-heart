@@ -1,0 +1,132 @@
+@use "../abstracts/" as *;
+.section-3 {
+  padding-top: 80px;
+  padding-bottom: 182px;
+
+  @include tablet {
+    padding-bottom: 80px;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 60px;
+
+    @include tablet {
+      justify-content: center;
+    }
+  }
+  .section-3-image {
+    width: 544px;
+    height: 463px;
+    flex-shrink: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    @include mobile {
+      display: none;
+    }
+
+    .section-3-image__children {
+      max-width: 377px;
+      max-height: 440px;
+    }
+
+    .section-3-image__singles {
+      position: absolute;
+      left: 0;
+      top: 168px;
+      width: 115px;
+      height: 58px;
+    }
+    .section-3-image__global {
+      position: absolute;
+      width: 139px;
+      height: 130px;
+      right: 0;
+      top: 197px;
+    }
+    .section-3-image__scores {
+      position: absolute;
+      width: 155px;
+      height: 106px;
+      right: 72px;
+      bottom: -22px;
+    }
+    .section-3-image__circle {
+      position: absolute;
+      width: 351.1px;
+      height: 351.1px;
+      top: 80px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: -1;
+    }
+  }
+
+  .secttion-3-content {
+    max-width: 381px;
+    .crossbar {
+      width: 94px;
+      height: 7px;
+      background: #e74040;
+      margin-bottom: 35px;
+
+      @include tablet {
+        width: 80px;
+        height: 6px;
+        margin-bottom: 25px;
+      }
+    }
+
+    .secttion-3-content__title {
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 50px;
+      letter-spacing: 0.2px;
+      color: $text-color;
+      margin-bottom: 35px;
+
+      @include tablet {
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 25px;
+      }
+
+      @include mobile {
+        font-size: 24px;
+      }
+    }
+
+    .secttion-3-content__msg {
+      max-width: 351px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.2px;
+      color: $text-sub-color;
+      margin-bottom: 35px;
+
+      @include tablet {
+        font-size: 12px;
+        line-height: 16px;
+        margin-bottom: 25px;
+      }
+    }
+
+    .learn-more {
+      color: $primary-color;
+      display: flex;
+      align-items: center;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+
+      .learn-more__text {
+        margin-right: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@use "../abstracts/" as *;
+.section-2 {
+  display: flex;
+  transform: translateY(-133px);
+  gap: 30;
+  justify-content: center;
+  margin: 0 auto;
+
+  @include tablet {
+    transform: none;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+}
