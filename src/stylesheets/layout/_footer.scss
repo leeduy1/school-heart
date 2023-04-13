@@ -1,0 +1,120 @@
+@use "../abstracts/" as *;
+
+.footer {
+  padding-top: 50px;
+
+  &.container {
+    padding: 0;
+  }
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 35px;
+
+    @include tablet {
+      margin: 0 auto;
+      max-width: 500px;
+    }
+
+    @include mobile {
+      display: block;
+      text-align: center;
+    }
+
+    .card-box {
+      margin-bottom: 50px;
+      .card-box__title {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.1px;
+        color: $text-color;
+        margin-bottom: 20px;
+      }
+      .list-item {
+        .item,
+        .item a {
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 24px;
+          letter-spacing: 0.2px;
+          color: $text-sub-color;
+          margin-bottom: 10px;
+
+          @include tablet {
+            font-size: 12px;
+            line-height: 16px;
+          }
+        }
+      }
+
+      &.get-in-touch {
+        .list-item {
+          svg {
+            margin-right: 10px;
+          }
+          .item {
+            display: flex;
+            align-items: center;
+
+            @include mobile {
+              display: block;
+
+              svg {
+                width: 16px;
+                transform: translateY(6px);
+              }
+            }
+
+            @include tablet {
+              svg {
+                width: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer-author {
+    background: #fafafa;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @include tablet {
+        max-width: 500px;
+      }
+
+      @include mobile {
+        display: block;
+        text-align: center;
+      }
+    }
+
+    .footer-author__msg {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0.2px;
+      color: $text-sub-color;
+    }
+
+    .list-icon {
+      display: flex;
+      align-items: center;
+      gap: 22;
+
+      @include mobile {
+        justify-content: center;
+        margin-top: 10px;
+      }
+    }
+  }
+}

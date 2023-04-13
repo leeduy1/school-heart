@@ -18,6 +18,10 @@
       line-height: 24px;
       letter-spacing: 0.2px;
       color: $light-text-color;
+
+      @include tablet {
+        font-size: 11px;
+      }
     }
 
     .image-wrapper__btn {
@@ -46,9 +50,14 @@
 
   .card-content {
     padding: 25px 30px 35px 25px;
+
+    @include tablet {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
     .card-content__heading {
       display: flex;
-      margin-bottom: 10px;
+      margin-bottom: 6px;
       .heading-title {
         font-weight: 700;
         font-size: 14px;
@@ -56,6 +65,10 @@
         letter-spacing: 0.2px;
         color: $primary-color;
         margin-right: 20px;
+
+        @include tablet {
+          font-size: 12px;
+        }
       }
       .heading-rate-star {
         width: 50px;
@@ -82,7 +95,12 @@
       line-height: 24px;
       letter-spacing: 0.1px;
       color: $text-color;
-      margin-bottom: 10px;
+      margin-bottom: 6px;
+
+      @include tablet {
+        font-size: 14px;
+        line-height: 18px;
+      }
     }
 
     .card-content__sub-title {
@@ -91,13 +109,18 @@
       line-height: 20px;
       letter-spacing: 0.2px;
       color: $text-sub-color;
-      margin-bottom: 10px;
+      margin-bottom: 6px;
+
+      @include tablet {
+        font-size: 12px;
+        line-height: 16px;
+      }
     }
 
     .card-content__download {
       display: flex;
       align-items: center;
-      margin-bottom: 15px;
+      margin-bottom: 10px;
 
       .download__btn {
         background-color: transparent;
@@ -110,6 +133,10 @@
         line-height: 24px;
         letter-spacing: 0.2px;
         color: $text-sub-color;
+
+        @include tablet {
+          font-size: 12px;
+        }
       }
     }
 
@@ -121,6 +148,11 @@
         font-size: 16px;
         line-height: 24px;
         letter-spacing: 0.1px;
+
+        @include tablet {
+          font-size: 14px;
+          line-height: 20px;
+        }
       }
       .content-prices__real {
         color: #bdbdbd;
@@ -142,6 +174,11 @@
       border: 1px solid $primary-color;
       border-radius: 37px;
 
+      @include tablet {
+        width: 120px;
+        height: 32px;
+      }
+
       span {
         font-weight: 700;
         font-size: 14px;
@@ -149,6 +186,11 @@
         letter-spacing: 0.2px;
         color: $primary-color;
         margin-right: 10px;
+
+        @include tablet {
+          font-size: 12px;
+          line-height: 16px;
+        }
       }
     }
   }

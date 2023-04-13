@@ -1,0 +1,171 @@
+@use "../abstracts/" as *;
+
+.section-6-card {
+  width: 323px;
+  background-color: $light-background-color;
+  padding: 50px 40px 35px;
+
+  @include tablet {
+    width: 250px;
+    padding: 25px 20 10px;
+  }
+
+  .card-like {
+    width: 96px;
+    height: 96px;
+    background: $primary-color;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include tablet {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  .card-status {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    color: $text-color;
+    margin-top: 35px;
+
+    @include tablet {
+      margin-top: 20px;
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+
+  .card-title {
+    width: 203px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: $text-sub-color;
+    margin-top: 35px;
+
+    @include tablet {
+      margin-top: 20px;
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+
+  .card-price {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 0.2px;
+    color: $primary-color;
+    margin-top: 35px;
+
+    @include tablet {
+      margin-top: 20px;
+      font-size: 32px;
+      line-height: 40px;
+    }
+  }
+
+  .card-per-month {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #8ec2f2;
+
+    @include tablet {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+
+  .card-msg {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: $text-sub-color;
+    margin-top: 32px;
+
+    @include tablet {
+      margin-top: 20px;
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+
+  .card-btn {
+    padding: 15px 40px;
+    gap: 10px;
+    width: 100%;
+    height: 52px;
+    background: #ff6551;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+    color: #ffffff;
+    margin-top: 35px;
+    cursor: pointer;
+
+    @include tablet {
+      margin-top: 20px;
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+
+  .feature-list {
+    margin-top: 35px;
+    @include tablet {
+      margin-top: 20px;
+    }
+    .feature-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+
+      @include tablet {
+        margin-bottom: 12px;
+      }
+
+      .feature-item__icon {
+        width: 32px;
+        height: 32px;
+        background: #bdbdbd;
+        border-radius: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+
+        @include tablet {
+          width: 28px;
+          height: 28px;
+        }
+
+        &.feature-item__icon--success {
+          background: #2dc071;
+        }
+      }
+      .feature-item__text {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+        color: $text-color;
+
+        @include tablet {
+          font-size: 12px;
+          line-height: 18px;
+        }
+      }
+    }
+  }
+}

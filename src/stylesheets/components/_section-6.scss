@@ -1,20 +1,15 @@
 @use "../abstracts/" as *;
 
-.section-5 {
-  padding-top: 112px;
-  padding-bottom: 192px;
-
-  @include tablet {
-    padding-top: 60px;
-    padding-bottom: 100px;
-  }
-
-  .section-5-content {
+.section-6 {
+  background-color: $dark-background-color;
+  padding-top: 160px;
+  padding-bottom: 180px;
+  .section-6-content {
     max-width: 420px;
     @include tablet {
       margin: 0 auto;
     }
-    .section-5-content__tag {
+    .section-6-content__tag {
       color: $primary-color;
       font-weight: 700;
       font-size: 14px;
@@ -27,12 +22,12 @@
         line-height: 16px;
       }
     }
-    .section-5-content__title {
+    .section-6-content__title {
       font-weight: 700;
       font-size: 40px;
       line-height: 50px;
       letter-spacing: 0.2px;
-      color: $text-color;
+      color: $light-text-color;
       margin-bottom: 10px;
 
       @include tablet {
@@ -40,12 +35,12 @@
         line-height: 40px;
       }
     }
-    .section-5-content__msg {
+    .section-6-content__msg {
       font-weight: 400;
       font-size: 14px;
       line-height: 20px;
       letter-spacing: 0.2px;
-      color: $text-sub-color;
+      color: $light-text-color;
 
       @include tablet {
         font-size: 12px;
@@ -54,19 +49,11 @@
     }
   }
 
-  .section-5-list-card {
-    margin-top: 112px;
+  .section-6-list-card {
+    margin-top: 109px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 30;
-
-    @include tablet {
-      margin-top: 80px;
-    }
-
-    @include mobile {
-      margin-top: 60px;
-    }
+    gap: 35;
   }
 }

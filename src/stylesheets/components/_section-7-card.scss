@@ -1,0 +1,75 @@
+@use "../abstracts/" as *;
+
+.section-7-card {
+  width: 508px;
+  padding: 25px 25px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  @include tablet {
+    width: 300px;
+  }
+  .card-avatar {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    @include tablet {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  .card-msg {
+    width: 320px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: $text-sub-color;
+    margin-top: 30px;
+
+    @include tablet {
+      max-width: 260px;
+      font-size: 12px;
+      line-height: 16px;
+      margin-top: 20px;
+    }
+  }
+
+  .list-star {
+    margin-top: 15px;
+  }
+
+  .card-name {
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: $text-color;
+
+    @include tablet {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  .card-job {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: $text-sub-color;
+    margin-top: 5px;
+
+    @include tablet {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+}
