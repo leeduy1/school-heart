@@ -88,6 +88,10 @@
     width: 513px;
     height: 363px;
 
+    @include mobile {
+      display: none;
+    }
+
     .video-iframe {
       width: 100%;
       height: 100%;

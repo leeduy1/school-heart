@@ -14,12 +14,15 @@
 
     @include tablet {
       margin: 0 auto;
-      max-width: 500px;
+      max-width: 600px;
+      justify-content: center;
+      column-gap: 50;
     }
 
     @include mobile {
-      display: block;
+      // display: block;
       text-align: center;
+      justify-content: center;
     }
 
     .card-box {
@@ -60,7 +63,6 @@
 
             @include mobile {
               display: block;
-
               svg {
                 width: 16px;
                 transform: translateY(6px);

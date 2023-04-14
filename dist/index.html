@@ -16,7 +16,7 @@
   <section class="section-1">
   <header class="header">
   <div class="container">
-    <a href="#" class="header__logo">Brandname</a>
+    <a href="/" class="header__logo">Brandname</a>
     <ul class="header-list">
       <li class="header-list-item">
         <a href="#" class="item__link">Home</a>
@@ -40,13 +40,34 @@
         </svg>
       </button>
     </div>
-    <div class="header__menu">
+    <label for="header-mobile-input" class="header__menu">
       <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H16V2H0V0Z" fill="white"></path>
         <path fill-rule="evenodd" clip-rule="evenodd" d="M0 6H16V8H0V6Z" fill="white"></path>
         <path fill-rule="evenodd" clip-rule="evenodd" d="M8 12H16V14H8V12Z" fill="white"></path>
       </svg>
-    </div>
+    </label>
+    <input type="checkbox" name="header-mobile-input" id="header-mobile-input">
+    <div class="header__overlay"></div>
+    <ul class="header-list-mobile">
+      <label class="close-list-item" for="header-mobile-input">
+        <svg data-hid="true" aria-hidden="true" viewBox="0 0 20 20" class="" style="--s: 20px">
+          <path fill="currentColor" fill-rule="evenodd" d="M15.303 4.697a.75.75 0 0 1 0 1.06L11.061 10l4.242 4.243a.75.75 0 0 1-1.06 1.06L10 11.061l-4.243 4.242a.75.75 0 0 1-1.06-1.06L8.939 10 4.697 5.757a.75.75 0 0 1 1.06-1.06L10 8.939l4.243-4.242a.75.75 0 0 1 1.06 0Z" clip-rule="evenodd"></path>
+        </svg>
+      </label>
+      <li class="header-list-item">
+        <a href="#" class="item__link">Home</a>
+      </li>
+      <li class="header-list-item">
+        <a href="#" class="item__link">Product</a>
+      </li>
+      <li class="header-list-item">
+        <a href="#" class="item__link">Pricing</a>
+      </li>
+      <li class="header-list-item">
+        <a href="#" class="item__link">Contact</a>
+      </li>
+    </ul>
   </div>
 </header>
 
@@ -61,7 +82,7 @@
 </section>
 
   <section class="section-2">
-  <div class="section-2-card ">
+  <div class="section-2-card">
   <div class="card-icon">
     <img src="/screen.71259881.svg" alt="">
   </div>
@@ -70,7 +91,7 @@
   <p class="card-msg">The gradual accumulation of information about atomic and small-scale behaviour...</p>
 </div>
 
-  <div class="section-2-card ">
+  <div class="section-2-card">
   <div class="card-icon">
     <img src="/training.847b24e5.svg" alt="">
   </div>
@@ -78,7 +99,7 @@
   <div class="crossbar"></div>
   <p class="card-msg">The gradual accumulation of information about atomic and small-scale behaviour...</p>
 </div>
-<div class="section-2-card card-active">
+<div class="section-2-card">
   <div class="card-icon">
     <img src="/book.e947932b.svg" alt="">
   </div>

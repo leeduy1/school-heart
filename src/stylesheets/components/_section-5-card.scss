@@ -173,6 +173,7 @@
       background-color: transparent;
       border: 1px solid $primary-color;
       border-radius: 37px;
+      cursor: pointer;
 
       @include tablet {
         width: 120px;
