@@ -20,7 +20,6 @@
     }
 
     @include mobile {
-      // display: block;
       text-align: center;
       justify-content: center;
     }
@@ -56,6 +55,15 @@
         .list-item {
           svg {
             margin-right: 10px;
+            width: 22px;
+
+            @include tablet {
+              width: 16px;
+            }
+
+            @include mobile {
+              transform: translateY(3px);
+            }
           }
           .item {
             display: flex;
@@ -63,16 +71,6 @@
 
             @include mobile {
               display: block;
-              svg {
-                width: 16px;
-                transform: translateY(6px);
-              }
-            }
-
-            @include tablet {
-              svg {
-                width: 18px;
-              }
             }
           }
         }

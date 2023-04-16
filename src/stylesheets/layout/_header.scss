@@ -1,6 +1,12 @@
 @use "../abstracts/" as *;
 .header {
   padding-top: 19px;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
   .container {
     display: flex;
     justify-content: space-between;
@@ -136,7 +142,7 @@
       .header-list-item {
         padding: 8px 0;
 
-        .item__link {
+        .header-list-item__link {
           color: $text-color;
           font-weight: 500;
           line-height: 24px;

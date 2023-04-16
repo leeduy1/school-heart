@@ -3,6 +3,7 @@
   @include bg-img("../assets/images/section-1/background.png");
   height: 893px;
   position: relative;
+  padding-top: 150px;
 
   @include tablet {
     height: 600px;
@@ -10,10 +11,11 @@
 
   @include mobile {
     height: 400px;
+    padding-top: 100px;
   }
 
   .section-1-content {
-    margin: 113px auto 0;
+    margin: 0 auto 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,7 +25,6 @@
     height: 466px;
 
     @include tablet {
-      margin-top: 60px;
       width: 499px;
       height: 366px;
       gap: 20px;
@@ -70,6 +71,7 @@
       line-height: 30px;
       letter-spacing: 0.2px;
       color: $light-text-color;
+      text-align: center;
 
       @include tablet {
         font-size: 14px;
