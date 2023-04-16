@@ -668,12 +668,16 @@ body {
 
 @media screen and (max-width: 767px) {
   .section-5 .section-5-list-card {
+    flex-wrap: nowrap;
+    justify-content: left;
     margin-top: 60px;
+    overflow-x: scroll;
   }
 }
 
 .section-5-card {
   width: 238px;
+  flex-shrink: 0;
 }
 
 .section-5-card .image-wrapper {

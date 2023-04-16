@@ -67,6 +67,9 @@
 
     @include mobile {
       margin-top: 60px;
+      flex-wrap: nowrap;
+      overflow-x: scroll;
+      justify-content: left;
     }
   }
 }
